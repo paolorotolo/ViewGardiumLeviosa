@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call from"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/callerId"
+        app:layout_constraintStart_toStartOf="@+id/callerId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatarImageView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/avatar"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#3f51b5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callerIdSub" />
+
+    <TextView
+        android:id="@+id/callerIdSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home +42 424 424 4242"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/callerId"
+        app:layout_constraintStart_toStartOf="@+id/callerId"
+        app:layout_constraintTop_toBottomOf="@+id/callerId" />
+
+    <TextView
+        android:id="@+id/callerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="E.T."
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/answerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="#00c853"
+        app:borderWidth="0dp"
+        app:layout_constraintVertical_bias="0.7"
+        app:fabCustomSize="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatarImageView"
+        app:srcCompat="@drawable/ic_call_white_24dp"
+        app:tint="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:text="Tap to answer"
+        app:layout_constraintBottom_toTopOf="@+id/answerButton"
+        app:layout_constraintEnd_toEndOf="@+id/answerButton"
+        app:layout_constraintStart_toStartOf="@+id/answerButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
