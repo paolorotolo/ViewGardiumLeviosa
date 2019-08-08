@@ -20,7 +20,7 @@ Makes a view fluctuate.
 
 ```gradle
 	dependencies {
-	        implementation 'com.github.paolorotolo:ViewGardiumLeviosa:1.0.0'
+	        implementation 'com.github.paolorotolo:viewgardiumleviosa:1.0.0'
 	}
 ```
 
